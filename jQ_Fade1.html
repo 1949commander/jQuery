@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fade in Out</title>
+        <meta name="description" content="Fade in Out">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("button").click(function(){
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle("fast");
+  });
+});
+        </script>
+        <style>
+            div {
+              margin: auto;
+              width: 60%;
+              border: 3px solid #73AD21;
+              padding: 10px;
+              font-size: 24pt;
+              text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+        <button>Click to fade in/out boxes</button><br><br>
+        
+        <div id="div1" style="width:200px;height:80px;background-color:red;">First</div>
+        <br>
+        <div id="div2" style="width:200px;height:80px;background-color:green;">Second</div>
+        <br>
+        <div id="div3" style="width:200px;height:80px;background-color:blueviolet;">Third</div> 
+    </body>
+</html>
